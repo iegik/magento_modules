@@ -25,9 +25,6 @@ class Magestore_Bannerslider_Block_Adminhtml_Bannerslider_Edit_Tab_Form extends 
 		$wysiwygConfig->setData("plugins",$plugins);
 		$wysiwygConfig->setData('add_widgets', true);
 
-    require_once "ChromePhp.php";
-    console::log($wysiwygConfig->getData());
-
     $fieldset = $form->addFieldset('bannerslider_form', array('legend'=>Mage::helper('bannerslider')->__('General information')));
    
     $fieldset->addField('title', 'text', array(
@@ -90,10 +87,10 @@ class Magestore_Bannerslider_Block_Adminhtml_Bannerslider_Edit_Tab_Form extends 
         'name'      => 'weblink',
     ));
 
-    $fieldset->addField('slider_content', 'editor', array(
-        'name'      => 'slider_content',
-        'label'     => Mage::helper('bannerslider')->__('Content'),
-        'title'     => Mage::helper('bannerslider')->__('Content'),
+    $fieldset->addField('description', 'editor', array(
+        'name'      => 'description',
+        'label'     => Mage::helper('bannerslider')->__('Description'),
+        'title'     => Mage::helper('bannerslider')->__('Description'),
         'style'     => 'height:26em;',
         'config'    => $wysiwygConfig,
         'wysiwyg'   => true,

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!--layout area="backend" handle="widget"/-->
+<layout version="0.1.0">
+    <bannerslider_adminhtml_bannerslider_index>
+    	<reference name="head">
+			<!--action method="setCanLoadExtJs"><flag>1</flag></action>
+			<action method="setCanLoadTinyMce"><flag>1</flag></action>
+			<action method="addJs"><script>lib/flex.js</script></action>
+			<action method="addJs"><script>mage/adminhtml/flexuploader.js</script></action>
+			<action method="addJs"><script>mage/adminhtml/browser.js</script></action>
+			<action method="addJs"><script>prototype/window.js</script></action>
+			<action method="addItem"><type>js_css</type><name>prototype/windows/themes/default.css</name></action>
+			<action method="addItem"><type>js_css</type><name>prototype/windows/themes/magento.css</name></action>
+			<action method="addItem"><type>js</type><name>mage/adminhtml/wysiwyg/tiny_mce/setup.js</name><params/></action>
+			<action method="addItem"><type>js</type><name>mage/adminhtml/wysiwyg/widget.js</name><params/></action>
+			<action method="addItem"><type>js</type><name>tiny_mce/tiny_mce.js</name><params/></action-->
+        </reference>
+        <reference name="content">
+			<!--block type="widget/adminhtml_widget_instance_edit" name="widget_instance_edit"/-->
+            <block type="bannerslider/adminhtml_bannerslider" name="bannerslider" />
+        </reference>
+        <reference name="js">
+            <block type="adminhtml/catalog_product_edit_js" template="catalog/product/js.phtml" name="catalog_product_js"></block>
+            <block type="core/template" template="catalog/wysiwyg/js.phtml"/>
+        </reference>
+    </bannerslider_adminhtml_bannerslider_index>
+    <!--reference name="bannerslider_adminhtml_bannerslider_edit">
+	    <update handle="editor"/>
+    	<reference name="head">
+            <action method="setCanLoadTinyMce"><flag>1</flag></action>
+            <action method="setCanLoadExtJs"><flag>1</flag></action>
+            <action method="addJs"><script>mage/adminhtml/wysiwyg/widget.js</script></action>
+            <action method="addItem"><type>js</type><name>prototype/window.js</name></action>
+            <action method="addItem"><type>js_css</type><name>prototype/windows/themes/default.css</name></action>
+            <action method="addCss"><name>lib/prototype/windows/themes/magento.css</name></action>
+            <!- -block type="widget/adminhtml_widget_instance_edit" name="head" /- ->
+        </reference>
+    </reference-->
+</layout>

@@ -40,6 +40,10 @@ class Magestore_Bannerslider_Block_Adminhtml_Bannerslider_Grid extends Mage_Admi
 			'index'     => 'content',
       ));
 	  */
+      $this->addColumn('description', array(
+			'header'    => Mage::helper('bannerslider')->__('Description'),
+			'index'     => 'description',
+      ));
 
       $this->addColumn('status', array(
           'header'    => Mage::helper('bannerslider')->__('Status'),
