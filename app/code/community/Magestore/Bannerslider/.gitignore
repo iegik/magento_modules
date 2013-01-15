@@ -1,0 +1,7 @@
+!./*
+!../../../../../app/design/adminhtml/default/default/layout/bannerslider.xml
+!../../../../../app/design/adminhtml/default/default/template/bannerslider/*
+!../../../../../app/design/frontend/base/default/layout/bannerslider.xml
+!../../../../../app/design/frontend/base/default/template/bannerslider/*
+!../../../../../app/etc/modules/Magestore_Bannerslider.xml
+
